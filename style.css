@@ -1,57 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&display=swap');
+/* Règles générales. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Inknut Antiqua', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: black;
+    color: white;
 }
+
+/* Menu. */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flexNav li a {
-    text-decoration: none;
-    color: #FFF;
-    margin-right: 20px;
+    margin: 0 15px;
+    margin-bottom: 30px;
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
-.hero {
-    height: 90vh;
-    width: 100vw;
-    background: url(./src/hero.jpeg) no-repeat center center/cover;
-    filter: sepia(60%);
+.burger {
+    width: 100px;
 }
+
+nav {
+    display: none;
+}
+
+/* Main. */
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.timetableMobile {
+    margin: 20px;
+}
+
+.happyHoursMobile {
+    background: center / contain no-repeat url('./src/Left-section.svg');
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+}
+
+.card {
+    border-radius: 50px;
+    background: #393939;
+    padding: 30px;
+    margin: 20px;
+}
+
+.cocktails, 
+.golem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktails p, 
+.golem p {
+    font-style: 14px;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cup {
+    align-self: end;
+}
+
+.cup img {
+    width: 60px;
+}
+
+.more {
+    display: none;
+}
+
+.happyHoursDesktop {
+    display: none;
+}
+
+/* Footer. */
+
+.timetableDesktop {
+    display: none;
 }
 
 footer {
-    background: #000;
-    width: 100%;
-    height: 10vh;
     display: flex;
-    justify-content: space-between;
-    color: #FFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 300px;
+    margin-top: 50px;
 }
 
 footer div {
