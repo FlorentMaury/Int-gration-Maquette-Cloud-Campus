@@ -45,6 +45,7 @@ main {
 
 h1 {
     font-size: 48px;
+    text-align: center;
 }
 
 .timetableMobile {
@@ -103,6 +104,13 @@ h3 {
     display: none;
 }
 
+@media (min-width: 650px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* Footer. */
 
 .timetableDesktop {
@@ -124,4 +132,108 @@ footer div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Desktop */
+
+@media (min-width: 850px) {
+
+    .hero {
+        background: right 10% bottom 50% url('./src/hero.jpeg') no-repeat;
+        
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .flexNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        padding: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    main {
+        justify-content: end;
+        align-items: end;
+    }
+
+    h1 {
+        text-align: right;
+    }
+
+    .cup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more {
+        display: block;
+        font-size: 12px;
+    }
+
+    .cards {
+        width: 55vw;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .happyHoursMobile {
+        display: none;
+    }
+
+    .happyHoursDesktop {
+        display: block;
+        align-self: start;
+        background: no-repeat url('./src/Left-section.png');
+        position: absolute;
+        display: flex;
+        font-size: 40px;
+        font-weight: 300;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -50px;
+        width: 600px;
+    }
+
+    .happyHoursDesktop div {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .timetableMobile {
+        display: none;
+    }
+
+    .timetableDesktop {
+        display: block;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        padding: 5px;
+    }
 }
