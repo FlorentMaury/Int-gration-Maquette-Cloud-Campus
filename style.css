@@ -11,6 +11,11 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Menu. */
 
 header {
@@ -140,8 +145,9 @@ footer div {
 @media (min-width: 850px) {
 
     .hero {
-        background: right 10% bottom 50% url('./src/hero.jpeg') no-repeat;
-        
+        background: center / cover url('./src/hero.jpeg') no-repeat;
+        filter: sepia(0.4);
+        height: 80vh;
     }
 
     .logo {
@@ -165,7 +171,7 @@ footer div {
 
     ul li a {
         text-decoration: none;
-        padding: 5px;
+        padding: 10px;
         color: white;
         cursor: pointer;
     }
@@ -204,8 +210,7 @@ footer div {
     .happyHoursDesktop {
         display: block;
         align-self: start;
-        background: no-repeat url('./src/Left-section.png');
-        position: absolute;
+        background: center / cover no-repeat url('./src/Left-section.png');
         display: flex;
         font-size: 40px;
         font-weight: 300;
@@ -229,7 +234,8 @@ footer div {
     }
 
     footer {
-        height: auto;
+        margin: 0 20px;
+        height: 10vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
