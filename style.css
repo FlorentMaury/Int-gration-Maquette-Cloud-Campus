@@ -51,6 +51,11 @@ main {
 h1 {
     font-size: 48px;
     text-align: center;
+    font-weight: 400;
+}
+
+h1 span {
+    font-weight: 700;
 }
 
 .timetableMobile {
@@ -84,7 +89,7 @@ h1 {
 
 .cocktails p, 
 .golem p {
-    font-style: 14px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -142,12 +147,12 @@ footer div {
 
 /* Desktop */
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
 
     .hero {
         background: center / cover url('./src/hero.jpeg') no-repeat;
         filter: sepia(0.4);
-        height: 80vh;
+        height: 100vh;
     }
 
     .logo {
@@ -192,13 +197,17 @@ footer div {
         align-items: center;
     }
 
+    .cup img {
+        width: 40px;
+    }
+
     .more {
         display: block;
         font-size: 12px;
     }
 
     .cards {
-        width: 55vw;
+        width: 65vw;
         display: flex;
         margin-bottom: 20px;
     }
@@ -208,16 +217,19 @@ footer div {
     }
 
     .happyHoursDesktop {
+        position: absolute;
         display: block;
         align-self: start;
-        background: center / cover no-repeat url('./src/Left-section.png');
+        background: center / contain no-repeat url('./src/Left-section.png');
         display: flex;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 300;
         justify-content: center;
         align-items: center;
-        margin: 0 -50px;
-        width: 600px;
+        bottom: -10px;
+        left: -40px;
+        padding: 30px;
+        text-align: center;
     }
 
     .happyHoursDesktop div {
@@ -234,12 +246,20 @@ footer div {
     }
 
     footer {
-        margin: 0 20px;
-        height: 10vh;
+        height: 100px;
+        margin: 0 40px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         font-size: 16px;
         padding: 5px;
+    }
+}
+
+/* PLUS GRAND. */
+
+@media (max-width: 851px) {
+    .cards {
+        width: 80vw;
     }
 }
