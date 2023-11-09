@@ -150,8 +150,8 @@ footer div {
 @media (min-width: 900px) {
 
     .hero {
-        background: center / cover url('./src/hero.jpeg') no-repeat;
-        filter: sepia(0.4);
+        background: center / cover url('./src/hero.webp') no-repeat;
+        filter: sepia(0.6);
         height: 100vh;
     }
 
@@ -220,7 +220,7 @@ footer div {
         position: absolute;
         display: block;
         align-self: start;
-        background: center / contain no-repeat url('./src/Left-section.png');
+        background: center / contain no-repeat url('./src/left-section.webp');
         display: flex;
         font-size: 36px;
         font-weight: 300;
