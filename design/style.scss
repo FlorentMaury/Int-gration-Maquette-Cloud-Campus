@@ -1,4 +1,4 @@
-@use 'reset';
+@import 'reset';
 
 /* Règles générales. */
 
@@ -67,9 +67,9 @@ h1 span {
 .happyHoursMobile {
     background: center / contain no-repeat url('../src/Left-section.svg');
     display: flex;
+    justify-content: space-between;
     font-size: 24px;
     font-weight: 300;
-    justify-content: space-between;
     align-items: center;
     height: 40vh;
 }
