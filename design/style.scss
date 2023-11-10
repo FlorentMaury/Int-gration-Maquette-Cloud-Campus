@@ -183,6 +183,10 @@ footer {
             padding: 10px;
             color: $primaryColor;
             cursor: pointer;
+
+            &--active {
+                border: 3px solid $primaryColor;
+            }
         }
     }
 
