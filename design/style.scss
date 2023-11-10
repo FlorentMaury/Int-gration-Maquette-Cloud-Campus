@@ -36,22 +36,19 @@ header {
 
     &__burger {
         width: 100px;
-    
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
     }
 }
 
 nav {
     display: none;
-}
-
-/* Main. */
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 15px;
 }
 
 h1 {
@@ -127,11 +124,6 @@ h3 {
 }
 
 /* Footer. */
-
-.timetableDesktop {
-    display: none;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -140,6 +132,10 @@ footer {
     font-size: 8px;
     font-weight: 300px;
     margin-top: 50px;
+
+    &__timetableDesktop {
+        display: none;
+    }
 
     div {
         display: flex;
@@ -166,6 +162,11 @@ footer {
         &__burger {
             display: none;
         }
+
+        &__main {
+            justify-content: end;
+            align-items: end;
+        }
     }
 
     nav {
@@ -188,11 +189,6 @@ footer {
                 border: 3px solid $primaryColor;
             }
         }
-    }
-
-    main {
-        justify-content: end;
-        align-items: end;
     }
 
     h1 {
@@ -250,10 +246,6 @@ footer {
         display: none;
     }
 
-    .timetableDesktop {
-        display: block;
-    }
-
     footer {
         height: 100px;
         margin: 0 40px;
@@ -262,6 +254,10 @@ footer {
         align-items: center;
         font-size: 16px;
         padding: 5px;
+
+        &__timetableDesktop {
+            display: block;
+        }
     }
 }
 
