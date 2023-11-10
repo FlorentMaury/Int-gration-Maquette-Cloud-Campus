@@ -47,6 +47,26 @@ header {
     }
 }
 
+.main {
+    &__timetableMobile {
+        margin: 20px;
+    }
+
+    &__happyHoursMobile {
+        background: center / contain no-repeat url('../src/Left-section.svg');
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 300;
+        align-items: center;
+        height: 40vh;
+    }
+
+    &__happyHoursDesktop {
+        display: none;
+    }
+}
+
 nav {
     display: none;
 }
@@ -61,20 +81,6 @@ h1 span {
     font-weight: 700;
 }
 
-.timetableMobile {
-    margin: 20px;
-}
-
-.happyHoursMobile {
-    background: center / contain no-repeat url('../src/Left-section.svg');
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-    font-weight: 300;
-    align-items: center;
-    height: 40vh;
-}
-
 .cards {
     &__cocktails, 
     &__golem {
@@ -87,6 +93,18 @@ h1 span {
         padding: 30px;
         margin: 20px;
     }
+
+    &__cup {
+        align-self: end;
+
+        img {
+            width: 60px;
+        }
+    
+        &__more {
+            display: none;
+        }
+    }
 }
 
 .cards__cocktails p, 
@@ -98,22 +116,6 @@ h1 span {
 h3 {
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-.cards__cup {
-    align-self: end;
-
-    img {
-        width: 60px;
-    }
-}
-
-.more {
-    display: none;
-}
-
-.happyHoursDesktop {
-    display: none;
 }
 
 @media (min-width: 650px) {
@@ -169,6 +171,43 @@ footer {
         }
     }
 
+    .main {
+        &__timetableMobile {
+            display: none;
+        }
+
+        &__happyHoursMobile {
+            display: none;
+        }
+
+        &__cards {
+            width: 65vw;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        &__happyHoursDesktop {
+            position: absolute;
+            display: block;
+            align-self: start;
+            background: center / contain no-repeat url('../src/left-section.webp');
+            display: flex;
+            font-size: 36px;
+            font-weight: 300;
+            justify-content: center;
+            align-items: center;
+            bottom: -10px;
+            left: -40px;
+            padding: 30px;
+            text-align: center;
+    
+            div {
+                padding-top: 100px;
+                text-align: center;
+            }
+        }
+    }
+
     nav {
         display: block;
     }
@@ -195,55 +234,22 @@ footer {
         text-align: right;
     }
 
-    .cards__cup {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 40px;
-        }
-    }
-
-    .more {
-        display: block;
-        font-size: 12px;
-    }
-
     .cards {
-        width: 65vw;
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .happyHoursMobile {
-        display: none;
-    }
-
-    .happyHoursDesktop {
-        position: absolute;
-        display: block;
-        align-self: start;
-        background: center / contain no-repeat url('../src/left-section.webp');
-        display: flex;
-        font-size: 36px;
-        font-weight: 300;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        left: -40px;
-        padding: 30px;
-        text-align: center;
-
-        div {
-            padding-top: 100px;
-            text-align: center;
+        &__cup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 40px;
+            }
+    
+            &__more {
+                display: block;
+                font-size: 12px;
+            }
         }
-    }
-
-    .timetableMobile {
-        display: none;
     }
 
     footer {
